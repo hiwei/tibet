@@ -1,0 +1,237 @@
+.index {
+	background: url('img/bg_m.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+	background-position: center center;
+	position: fixed;
+	height: 100%;
+	width: 100%;
+}
+.index_word {
+	z-index: 4;
+	position: fixed;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	font-weight: 800;
+	letter-spacing: 0.1vw;
+	background: none;
+	text-align: center;
+}
+.index_word br {
+	display: block;
+}
+.index_word :nth-child(1), .index_word :nth-child(2) {
+	background: none;
+	text-shadow: 4px 3px 0px blue;
+	top: 30%;
+}
+.index_word :nth-child(2) {
+	margin-left: 2px;
+	margin-top: 1px;
+	text-shadow: -1px 1px 0px #ff0;
+}
+.page1 {
+	height: 80%;
+	width: 100%;
+	text-align: center;
+	background: #fff;
+}
+.page1 :nth-child(1) {
+	margin-top: 80%;
+}
+.page1 :nth-child(2) {
+	margin-top: 5%;
+}
+.page2 :nth-child(3) {
+	clear: right;
+	width: 80%;
+	text-align: left;
+	font-weight: 300;
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-top: 10%;
+}
+.page2 > img {
+	clear: left;
+	max-width: 80%;
+	height: auto;
+	margin-left: 10%;
+	margin-top: 10%;
+}
+.page3 {
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	color: #000;
+	background: #fff;
+	margin-top: 0%;
+}
+.page3 :nth-child(1) {
+	width: 80%;
+	text-align: left;
+	margin: auto;
+	opacity: 0;
+	font-weight: 700;
+	padding-top: 60%;
+}
+.history :nth-child(1) {
+	padding-top: 60%;
+}
+.history :nth-child(2) {
+	width: 80%;
+	text-align: left;
+	font-weight: 300;
+	margin-top: 2%;
+	margin-left: 10%;
+}
+.page4 {
+	margin-top: 200%;
+}
+.about_words {
+	height: 30%;
+	width: 70%;
+}
+/* menu */
+.menu, .about_content_menu {
+	z-index: 99;
+	width: 45px;
+	height: 45px;
+	background: none;
+	position: absolute;
+	position: fixed;
+	float: right;
+	top: 5vh;
+	right: 5vh;
+}
+.menu :nth-child(1), .menu :nth-child(2), .menu :nth-child(4), .menu :nth-child(5){
+	width: 10px;
+	height: 10px;
+	border-radius: 20px;
+	background: #000;
+	margin-left: 6px;
+	margin-top: 5px;
+	display: inline-block;
+	transition: width .5s, height .5s, transform .5s, margin .5s, opacity .2s, background .5s;
+}
+.menu:hover, .about_content_menu:hover {
+	cursor: pointer;
+}
+.menu:hover :nth-child(1), .menu:hover :nth-child(2), .menu:hover :nth-child(4), .menu:hover :nth-child(5){
+	background: #000;
+}
+.menu.clicked :nth-child(1) {
+	height: 3px;
+	width: 40px;
+	margin-left: 0px;
+	margin-top: 20px;
+	background: #000;
+	transform: rotate(45deg);
+}
+.menu.clicked :nth-child(2) {
+	height: 3px;
+	width: 40px;
+	margin-left: -43px;
+	margin-top: 0px;
+	background: #000;
+	transform: rotate(-45deg);
+}
+.menu.clicked :nth-child(4), .menu.clicked :nth-child(5) {
+	height: 10px;
+	opacity: 0;
+	background: #000;
+	margin-top: 0px;
+}
+.menu_select {
+	line-height: 3rem;
+}
+.menu_select.clicked {
+	top: 15%;
+}
+.menu_select.clicked ul li:hover {
+	color: #000;
+}
+.about_content_menu :nth-child(1), .about_content_menu :nth-child(2) {
+	border-radius: 20px;
+	height: 3px;
+	width: 40px;
+	transition: background .5s;
+	background: #000;
+}
+.about_content_menu :nth-child(1) {
+	margin-left: 0px;
+	margin-top: 20px;
+	transform: rotate(45deg);
+}
+.about_content_menu :nth-child(2) {
+	margin-left: 0px;
+	margin-top: -3px;
+	transform: rotate(-45deg);
+}
+.about_content_menu:hover :nth-child(1), .about_content_menu:hover :nth-child(2) {
+	background: #000;
+}
+.gototop {
+	bottom: 5vh;
+	right: 5vh;	
+}
+.gototop:hover {
+	color: #000;
+}
+/* timeline RWD */
+
+/* central line */
+.timeline ul li {
+	margin-left: 0px;
+	width: 2px;
+	padding-top: 100px;
+}
+.timeline ul li:nth-child(1) {
+	margin-top: 50px;
+	padding: 0px;
+}
+/* point on line */
+.timeline ul li::after {
+	left: 50%;
+	top: 160px;
+	width: 15px;
+	height: 15px;
+}
+/* content */
+.timeline ul li div {
+	width: 70vw;
+}
+.timeline ul li:nth-child(n) div {
+	left: 30px;
+}
+.timeline ul li:nth-child(n) div::before {
+	left: -25px;
+	top: 67px;
+	width: 4vw;
+	border: 0;
+	border-top: #ccc 1px solid;
+}
+.timeline ul li:nth-child(1) div::before {
+	border: 0;
+}
+.timeline_img {
+	width: 100%;
+	height: auto;
+	padding: 1vw 0vw 1vw 0vw;
+}
+.timeline ul li:nth-last-child(1)::after {
+	top: 200px;
+}
+.timeline ul li:nth-last-child(1) div {
+	top: 0;
+	left: 0;
+}
+.timeline ul li:nth-last-child(1) div::before {
+	border: 0;
+}
+.timeline ul li:nth-last-child(1) {
+	padding-top: 200px;
+}

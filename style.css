@@ -71,6 +71,7 @@ body {
 	margin-top: -150px;
 }
 .menu_select {
+	display: none;
 	z-index: 98;
 	opacity: 0;
 	position: absolute;
@@ -82,12 +83,32 @@ body {
 	line-height: 5rem;
 	text-align: right;
 	transition: top 1s ease, opacity .5s;
+	-webkit-animation: hiddenfade .5s;
+	animation: hiddenfade .5s;
 }
 .menu_select.clicked {
 	display: block;
 	z-index: 98;
 	opacity: 1;
 	top: 12vw;
+	-webkit-animation: showfade .5s;
+	animation: showfade .5s;
+}
+@-webkit-keyframes showfade {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}  
+@keyframes showfade {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+@-webkit-keyframes hiddenfade {
+	0% { opacity: 1; }
+	100% { opacity: 0; }
+}  
+@keyframes hiddenfade {
+	0% { opacity: 1; }
+	100% { opacity: 0; }
 }
 .menu_select ul li {
 	list-style-type: none;

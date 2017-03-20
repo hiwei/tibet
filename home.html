@@ -19,7 +19,7 @@
 </div>
 <div class="menu_select">
 	<ul>
-		<li>1913, What Dalai Lama Said</li>
+		<li>Dalai Lama Said :</li>
 		<li>National Uprising Day</li>
 		<li>Timeline : 1912 - 2015</li>
 		<li>About</li>
@@ -179,34 +179,33 @@ $('.about_content_menu').on('click', function() {
 });
 $(document).ready(function() {
 	// to where
-	$('.home_button').on('click', function() {
-		$('html, body').animate({ scrollTop: 0 }, 500);
-	});
 	$('.gototop').on('click', function() {
-		$('html, body').animate({ scrollTop: 0 }, 500);
+		$('html, body').animate({ scrollTop: 0 }, 1000);
 	});
 
 	$('.menu_select ul :nth-child(1)').click(function(){
 		if ( $('.menu_select').hasClass('clicked')){
-			$('html, body').animate({ scrollTop: $('#to1913').offset().top }, 500);
+			$('html, body').animate({ scrollTop: $('#to1913').offset().top }, 1000);
 			$('.menu, .menu_select').toggleClass('clicked');
 			$('.white').fadeIn(1);
 		}
 	});
 	$('.menu_select ul :nth-child(2)').click(function(){
 		if ( $('.menu_select').hasClass('clicked')){
-			$('html, body').animate({ scrollTop: $('#topage3').offset().top }, 500);
+			$('html, body').animate({ scrollTop: $('#topage3').offset().top }, 1000);
 			$('.menu, .menu_select').toggleClass('clicked');
 			$('.white').fadeIn(1);
 		}
 	});
 	$('.menu_select ul :nth-child(3)').click(function(){
 		if ( $('.menu_select').hasClass('clicked')){
-			$('html, body').animate({ scrollTop: $('#totimeline').offset().top }, 500);
+			$('html, body').animate({ scrollTop: $('#totimeline').offset().top }, 1000);
 			$('.menu, .menu_select').toggleClass('clicked');
 			$('.white').fadeIn(1);
 		}
 	});
+	
+	// about
 	$('.menu_select ul :nth-child(4)').click(function(){
 		if ( $('.menu_select').hasClass('clicked')){
 			$('.about_content').fadeIn(500);

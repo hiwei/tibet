@@ -159,7 +159,8 @@
 	<div class="about_words">
 	This website is talking about the history of Tibet independence. Because I am always curious about this mysterious nation and think maybe it's the most romantic place in the world. I just redesign the website and practice skills. All of the contents and information come from these two websites below.<br>
 	<br>
-	Thanks : <a href="https://tibettruth.com/2010/07/04/march-for-tibets-independence/" target="_blank">tibettruth.com</a> & <a href="https://freetibet.org/about/history" target="_blank">FreeTibet.org</a></p>
+	Thanks : <br>
+	<a href="https://tibettruth.com/2010/07/04/march-for-tibets-independence/" target="_blank">tibettruth.com</a> & <a href="https://freetibet.org/about/history" target="_blank">FreeTibet.org</a></p>
 	</div>
 </div>
 
@@ -209,9 +210,10 @@ $(document).ready(function() {
 	});
 	
 	// fade in
-	
-	// Dalai Lama
+	var count_timeline = $('.timeline ul').children().length + 1;
+
     $(window).scroll( function(){
+		// Dalai Lama
         $('.page1 :nth-child(1)').each( function(i){
             var bottom_of_object = $(this).offset().top + $(this).outerHeight();
             var bottom_of_window = $(window).scrollTop() + $(window).height();
@@ -220,10 +222,7 @@ $(document).ready(function() {
 				$('.history').css('opacity','0');    
             }            
         }); 
-	});
-	
-	// Introduction - background color change
-    $(window).scroll( function(){
+		// Introduction - background color change
         $('.page2').each( function(i){
             var bottom_of_object = $(this).offset().top + $(this).outerHeight()-500;
             var bottom_of_window = $(window).scrollTop() + $(window).height();
@@ -233,11 +232,8 @@ $(document).ready(function() {
 				$(this).css('background','#fff');    
 			}
         }); 
-	});
-	
-	// Uprising Day
-    $(window).scroll( function(){
-        $('.page3 :nth-child(1)').each( function(i){
+		// Uprising Day
+		$('.page3 :nth-child(1)').each( function(i){
             var bottom_of_object = $(this).offset().top + $(this).outerHeight();
             var bottom_of_window = $(window).scrollTop() + $(window).height();
             if( bottom_of_window > bottom_of_object ){
@@ -253,11 +249,7 @@ $(document).ready(function() {
 				$(this).animate({'opacity':'1'},2000);    
 			}
         }); 
-	});
-	
-	// Timeline fade in
-	var count_timeline = $('.timeline ul').children().length + 1;
-	$(window).scroll( function(){
+		// Timeline fade in
 		for ( var li_num = 0; li_num < count_timeline; li_num ++) {
 			$('.timeline ul li div:nth-child(' + li_num + ')').each( function(i){
 				var bottom_of_object = $(this).offset().top + $(this).outerHeight()-300;

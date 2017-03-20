@@ -6,7 +6,7 @@ body {
 .index {
 	background: url('img/bg_m.png');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 50% 50%;
 	background-position: center center;
 	position: fixed;
 	height: 100vh;

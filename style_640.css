@@ -51,6 +51,9 @@ body {
 .page1 :nth-child(2) {
 	margin-top: 5%;
 }
+.page2 {
+	height: 120%;
+}
 .page2 :nth-child(3) {
 	clear: right;
 	width: 80%;
@@ -59,13 +62,14 @@ body {
 	margin-left: 10%;
 	margin-right: 10%;
 	margin-top: 10%;
+	padding-bottom: 20%;
 }
 .page2 > img {
 	clear: left;
 	max-width: 80%;
 	height: auto;
 	margin-left: 10%;
-	margin-top: 10%;
+	margin-top: 5%;
 }
 .page3 {
 	height: 100%;

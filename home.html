@@ -164,11 +164,14 @@
 	</div>
 </div>
 
+<div class="white">
+</div>
 
 <script>
 $('.menu').on('click', function() {
 	$(this).toggleClass('clicked');
 	$('.menu_select').toggleClass('clicked');
+	$('.white').fadeToggle(1);
 });
 $('.about_content_menu').on('click', function() {
 	$('.about_content').fadeOut(500);
@@ -187,18 +190,21 @@ $(document).ready(function() {
 		if ( $('.menu_select').hasClass('clicked')){
 			$('html, body').animate({ scrollTop: $('#to1913').offset().top }, 500);
 			$('.menu, .menu_select').toggleClass('clicked');
+			$('.white').fadeIn(1);
 		}
 	});
 	$('.menu_select ul :nth-child(2)').click(function(){
 		if ( $('.menu_select').hasClass('clicked')){
 			$('html, body').animate({ scrollTop: $('#topage3').offset().top }, 500);
 			$('.menu, .menu_select').toggleClass('clicked');
+			$('.white').fadeIn(1);
 		}
 	});
 	$('.menu_select ul :nth-child(3)').click(function(){
 		if ( $('.menu_select').hasClass('clicked')){
 			$('html, body').animate({ scrollTop: $('#totimeline').offset().top }, 500);
 			$('.menu, .menu_select').toggleClass('clicked');
+			$('.white').fadeIn(1);
 		}
 	});
 	$('.menu_select ul :nth-child(4)').click(function(){
@@ -206,6 +212,7 @@ $(document).ready(function() {
 			$('.about_content').fadeIn(500);
 			$('.about_content_menu').delay(1000).fadeIn(1000);
 			$('.menu, .menu_select').toggleClass('clicked');
+			$('.white').fadeIn(1);
 		}
 	});
 	

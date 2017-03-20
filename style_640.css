@@ -9,7 +9,7 @@ body {
     background-size: cover;
 	background-position: center center;
 	position: fixed;
-	height: 120%;
+	height: 100%;
 	width: 100%;
 }
 .index_word {
@@ -89,9 +89,6 @@ body {
 	opacity: 0;
 	font-weight: 700;
 	padding-top: 60%;
-}
-.history {
-	height: 120%;
 }
 .history :nth-child(1) {
 	padding-top: 60%;

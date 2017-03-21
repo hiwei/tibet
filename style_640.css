@@ -12,35 +12,18 @@ body {
 	height: 100%;
 	width: 100%;
 }
-.index_word {
-	z-index: 4;
-	position: fixed;
-	position: absolute;
-	width: 25%;
-	height: 100%;
-	display: -webkit-flex;
-	display: flex;
-	-webkit-justify-content: center;
-	justify-content: center;
-	-webkit-align-content: center;
-	align-content: center;
-	font-weight: 800;
-	letter-spacing: 0.1vw;
-	background: none;
-	text-align: center;
-}
-.index_word br {
-	display: block;
-}
 .index_word :nth-child(1), .index_word :nth-child(2) {
 	background: none;
 	text-shadow: 4px 3px 0px blue;
-	top: 30%;
+	width: 90%;
+	height: 150px;
 }
 .index_word :nth-child(2) {
-	margin-left: 2px;
-	margin-top: 1px;
+	transform: translate(2px, 1px);
 	text-shadow: -1px 1px 0px #ff0;
+}
+.index_word br {
+	display: block;
 }
 .page1 {
 	height: 100%;

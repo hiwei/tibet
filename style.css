@@ -126,9 +126,6 @@ body {
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	display: flex;
-	justify-content: center;
-	align-content: center;
 	font-weight: 800;
 	letter-spacing: 0.1vw;
 	background: none;
@@ -141,14 +138,21 @@ body {
 	padding: 0 15px 10px 15px;
 	text-shadow: 4px 7px 0px blue;
 	position: absolute;
-	top: 40%;
+	width: 1080px;
+	height: 140px;
+	margin: auto;
+	right: 0;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	text-align: center;
 }
 .index_word :nth-child(2) {
 	z-index: 4;
-	margin-left: 3px;
-	margin-top: 1px;
-	color: #fff;
+	margin: auto;
+	transform: translate(3px, 1px);
 	background: none;
+	color: #fff;
 	text-shadow: -1px 3px 0px #ff0;
 }
 .index_word br {
@@ -466,6 +470,10 @@ time {
 	.index_word {
 		font-size: 90px;
 	}
+	.index_word :nth-child(1), .index_word :nth-child(2) {
+		width: 950px;
+		height: 130px;
+	}
 	.page1 :nth-child(2), .page2 :nth-child(3), .history :nth-child(2), .page4, .about_words {
 		font-size: 1.4rem;
 	}
@@ -483,6 +491,10 @@ time {
 	.index_word {
 		font-size: 75px;
 	}
+	.index_word :nth-child(1), .index_word :nth-child(2) {
+		width: 780px;
+		height: 105px;
+	}
 	.page1 :nth-child(2), .page2 :nth-child(3), .history :nth-child(2), .page4, .about_words {
 		font-size: 1.2rem;
 	}
@@ -499,6 +511,10 @@ time {
 	}
 	.index_word {
 		font-size: 55px;
+	}
+	.index_word :nth-child(1), .index_word :nth-child(2) {
+		width: 580px;
+		height: 75px;
 	}
 	.page1 :nth-child(2), .page2 :nth-child(3), .history :nth-child(2), .page4, .about_words {
 		font-size: 1rem;
